@@ -11,7 +11,7 @@ for (let i = 0; i < listaDeTeclas.length; i++) {
     const idAudio = `#som_${instrumento}`; 
     teclas.onclick = function () {
         tocaSom(idAudio);
-    };
+    }
 }
 
 /* EXEMPLO 
