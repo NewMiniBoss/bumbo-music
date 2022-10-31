@@ -13,6 +13,14 @@ for (let i = 0; i < listaDeTeclas.length; i++) {
     teclas.onclick = function () {
         tocaSom(idAudio);
     }
+
+    teclas.onkeydown = function () {
+        teclas.classList.add('ativa');
+    }
+
+    teclas.onkeyup = function () {
+        teclas.classList.remove('ativa');
+    }
 }
 
 /* EXEMPLO 
