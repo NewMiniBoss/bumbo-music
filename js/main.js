@@ -1,16 +1,8 @@
-// modulo 1 e 2 -> pegando o elemento com DOM e fazendo função para ativar o som
-
-/* 
-let pom = document.querySelector('.tecla_pom').onclick = tocaSomPom;
-function tocaSomPom() {
-    document.querySelector('#som_tecla_pom').play();
-}
-*/
-
-// modulo 3 ->
-
-const listaDeTeclas = document.querySelectorAll('.tecla');
-listaDeTeclas[0].onclick = tocaSomPom;
-function tocaSomPom() {
+function tocaSom() {
     document.querySelector('#tecla_som_pom').play();
+}
+const listaDeTeclas = document.querySelectorAll('.tecla');
+
+for (let i = 0; i < listaDeTeclas.length; i++) {
+    listaDeTeclas[i].onclick = tocaSomPom;
 }
