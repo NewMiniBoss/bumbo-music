@@ -2,7 +2,6 @@
 
 /* 
 let pom = document.querySelector('.tecla_pom').onclick = tocaSomPom;
-
 function tocaSomPom() {
     document.querySelector('#som_tecla_pom').play();
 }
@@ -10,9 +9,8 @@ function tocaSomPom() {
 
 // modulo 3 ->
 
-let teclas = document.querySelectorAll('.tecla').length;
-let som = teclas.onclick = tocaSom;
-
-function tocaSom() {
-    document.querySelectorAll('#som').length.play();
+const listaDeTeclas = document.querySelectorAll('.tecla');
+listaDeTeclas[0].onclick = tocaSomPom;
+function tocaSomPom() {
+    document.querySelector('#tecla_som_pom').play();
 }
